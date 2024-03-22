@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Evaluation Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Website Evaluation</h1>
+        <img src="images/discord.png" alt="Descriptive Alt Text" style="max-width: 100%; height: auto; margin: 20px 0;">
+        <form action="/submit" method="post" class="needs-validation" novalidate>
+            <div class="form-group mb-3">
+                <label for="textQuestion" class="form-label">What is your initial impression of the website?</label>
+                <input type="text" class="form-control" id="textQuestion" name="textQuestion" required>
+            </div>
+            <div class="form-group mb-3">
+                <label>How do you rate the website's usability?</label>
+                <div>
+                    <div class="form-check">
+                        <input type="radio" id="good" name="usability" value="good" class="form-check-input">
+                        <label for="good" class="form-check-label">Good</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="average" name="usability" value="average" class="form-check-input">
+                        <label for="average" class="form-check-label">Average</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="poor" name="usability" value="poor" class="form-check-input">
+                        <label for="poor" class="form-check-label">Poor</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="websiteSpeed">How was the website's speed?</label>
+                <select id="websiteSpeed" name="websiteSpeed" class="form-control">
+                    <option value="fast">Fast</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="slow">Slow</option>
+                </select>
+            </div>
+            <div class="form-group mb-3">
+                <label for="colors">How did you like the colors?</label>
+                <select id="colors" name="colors" class="form-control">
+                    <option value="great">Great</option>
+                    <option value="average">Average</option>
+                    <option value="not great">Not Great</option>
+                </select>
+            </div>
+            <div class="form-group mb-3">
+                <label>Which features did you like? (Select all that apply)</label>
+                <div class="form-check">
+                    <input type="checkbox" id="design" name="feature" value="design" class="form-check-input">
+                    <label for="design" class="form-check-label">Design</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="usabilityFeature" name="feature" value="usability"
+                        class="form-check-input">
+                    <label for="usabilityFeature" class="form-check-label">Usability</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="content" name="feature" value="content" class="form-check-input">
+                    <label for="content" class="form-check-label">Content</label>
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="comments">Any other comments:</label>
+                <textarea id="comments" name="comments" class="form-control"></textarea>
+            </div>
+            <div class="form-group mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
+``
